@@ -3,49 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portofolio</title>
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Portofolio Julian</h1>
-    <p>Hai! Nama saya Julian Benhart dari sekolah SMK Plus Pelita Nusantara kelas X RPL 1</p>
-    <h3>Bahasa Pemograman yang saya minati</h3>
-    <li>JavaScript/TypeScript</li>
-    <li>Python</li>
-    <li>C#</li>
-    <table border="5" cellspacing="0" cellpadding="0">
-        <thead>
+    <div class="portfolio-card">
+        <h1>Portfolio "Nama Saya"</h1>
+        <p>Halo! Saya adalah seorang siswa yang sedang belajar pemrograman. Saya sangat tertarik untuk mempelajari berbagai bahasa pemrograman dan cara mengembangkan aplikasi sederhana.</p>
+
+        <div class="profile-section">
+            <img src="profile.jpg" alt="Profile Image">
+        </div>
+
+        <h2>Minat Saya</h2>
+        <ul>
+            <li>Belajar bahasa pemrograman</li>
+            <li>Pengembangan aplikasi web</li>
+            <li>Desain antarmuka pengguna</li>
+        </ul>
+
+        <h2>Informasi Pribadi</h2>
+        <table>
             <tr>
-                <th colspan="2">Tentang Saya</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><b>Nama</b></td>
-                <td>Julian Benhart</td>
-            </tr>
-            <tr>
-                <td><b>Kelas</b></td>
-                <td>X RPL 1</td>
-            </tr>
-            <tr>
-                <td><b>Sekolah</b></td>
-                <td>SMK Plus Pelita Nusantara</td>
+                <td><strong>Tempat, Tanggal Lahir</strong></td>
+                <td>Jakarta, 1 Januari 2006</td>
             </tr>
             <tr>
-                <td><b>Github</b></td>
-                <td><a href="https://github.com/Kiru-I/" target="_blank">Kiru-I</td>
+                <td><strong>Asal Sekolah</strong></td>
+                <td>SMAN 1 Jakarta</td>
             </tr>
-        </tbody>
-    </table>
-    <h3>Beritahu dirimu</h3>
-    <label for="">Nama</label><br>
-    <input type="text"><br>
-    <label for="">Sekolah</label><br>
-    <input type="text"><br>
-    <label for="">Kelas</label><br>
-    <input type="text"><br>
-    <label for="">Github</label><br>
-    <input type="text"><br>
-    <br><button>Berikan Informasimu</button>
+            <tr>
+                <td><strong>GitHub</strong></td>
+                <td><a href="https://github.com/Kiru-I" target="_blank">GitHub saya</a></td>
+            </tr>
+        </table>
+
+        <h2>Hubungi Saya</h2>
+        <form action="#" method="post">
+            <label for="name">Nama:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Pesan:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <button type="submit">Kirim</button>
+        </form>
+    </div>
 </body>
 </html>
